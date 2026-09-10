@@ -1,0 +1,35 @@
+# Node / Angular
+node_modules/
+npm-debug.log*
+.DS_Store
+coverage/
+.angular/
+.vite/
+
+# Build outputs
+TodoApp/dist/
+TodoApp/out-tsc/
+TodoApp/.angular/
+TodoApp/.vite/
+TodoApp/coverage/
+
+# .NET
+TodoAppApi/**/bin/
+TodoAppApi/**/obj/
+TodoAppApi/**/*.user
+TodoAppApi/**/*.suo
+TodoAppApi/**/*.cache
+TodoAppApi/**/*.pdb
+TodoAppApi/**/*.db
+TodoAppApi/**/*.db-shm
+TodoAppApi/**/*.db-wal
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.code-workspace
+
+# OS files
+Thumbs.db
+Desktop.ini
+/TodoAppApi/.github/copilot-instructions.md
