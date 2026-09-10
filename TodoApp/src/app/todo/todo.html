@@ -1,0 +1,19 @@
+<div class="todo-wrapper">
+	<h2>My Tasks</h2>
+  
+	<div class="input-box">
+		<input [(ngModel)]="newTodoTitle" (keyup.enter)="submit()" placeholder="Please enter a task" />
+		<button (click)="submit()">Add Task</button>
+	</div>
+
+	<ul class="task-list">
+		@for (item of todoService.todos(); track item.id) {
+			<li>
+				<span>{{ item.title }}</span>
+				<button class="btn-del" (click)="todoService.deleteTodo(item.id)">Delete</button>
+			</li>
+		} @empty {
+			<p class="empty">No pending tasks.</p>
+		}
+	</ul>
+</div>
